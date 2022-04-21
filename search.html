@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/middle1.css" rel="stylesheet" type="text/css">
+    <link href="css/search.css" rel="stylesheet" type="text/css">
+
+    <title>My Playlist</title>
+    <script src="js/common.js"></script>
+</head>
+<body>
+    <header>
+        <nav>                       
+            <ul id="nav_container">
+                <li id="b_i">
+                    <h1><a href="index.html">高揚</a></h1>
+                </li>
+                <li id="menu_bar">
+                    <ul>
+                        <li><a href="kpop.html">K-POP</a></li>
+                        <li><a href="popsong.html">POP SONG</a></li>
+                        <li><a href="search.html"><b>MY PLAYLIST</b></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="searchbox">
+        <div id="search_header">
+            <h1>노래를 검색해보세요</h1>
+            <input onkeyup="filter()" type="text" id="value" placeholder="Type to Search">
+        </div>
+    
+        <div id="container">    
+            <div class="item">
+                <span class="icon"><img src="img/그대에게.jpg" height=" 70px"></span>
+                <span class="name">신해철 - 그대에게</span>
+                <a class="youtube" href="https://youtu.be/_qbkjD8f8A0" target='_blank'><img id="0_song" src="img/youtube_icon_0.png" onmouseover="this.src='img/youtube_icon.png'" onmouseout="this.src='img/youtube_icon_0.png'"  alt="youtube" height="40px"></a>
+            </div>
+    
+            <div class="item">
+                <span class="icon"><img src="img/나에게로 떠나는 여행.jpg" height=" 70px"></span>
+                <span class="name">버즈 - 나에게로 떠나는 여행</span>
+                <a class="youtube" href="https://youtu.be/fqdgHKMqUp0" target='_blank'><img id="1_song" src="img/youtube_icon_0.png" onmouseover="this.src='img/youtube_icon.png'" onmouseout="this.src='img/youtube_icon_0.png'"  alt="youtube" height="40px"></a>
+            </div>
+    
+            <div class="item">
+                <span class="icon"><img src="img/나에게로의 초대.jpg" height=" 70px"></span>
+                <span class="name">박기영, 조유진 - 나에게로의 초대</span>
+                <a class="youtube" href="https://youtu.be/dz4WCVP0gEI" target='_blank'><img id="2_song" src="img/youtube_icon_0.png" onmouseover="this.src='img/youtube_icon.png'" onmouseout="this.src='img/youtube_icon_0.png'"  alt="youtube" height="40px"></a>
+            </div>
+    
+            <div class="item">
+                <span class="icon"><img src="img/당신을 위하여.jpg" height=" 70px"></span>
+                <span class="name">더 크로스 - 당신을 위하여</span>
+                <a class="youtube" href="https://youtu.be/lpwymCwuLWQ" target='_blank'><img id="3_song" src="img/youtube_icon_0.png" onmouseover="this.src='img/youtube_icon.png'" onmouseout="this.src='img/youtube_icon_0.png'"  alt="youtube" height="40px"></a>
+            </div>
+    
+            <div class="item">
+                <span class="icon"><img src="img/사랑결코시들지않는.jpg" height=" 70px"></span>
+                <span class="name">서문탁 - 사랑,결코 시들지 않는....</span>
+                <a class="youtube" href="https://youtu.be/R3IzccqqBKk" target='_blank'><img id="4_song" src="img/youtube_icon_0.png" onmouseover="this.src='img/youtube_icon.png'" onmouseout="this.src='img/youtube_icon_0.png'"  alt="youtube" height="40px"></a>
+            </div>    
+            <div class="item">
+                <span class="icon"><img src="img/사랑과 우정사이.jpg" height=" 70px"></span>
+                <span class="name">김경호 with 김연우 - 사랑과 우정사이</span>
+                <a class="youtube" href="https://youtu.be/C1iT0P9Lty8" target='_blank'><img id="5_song" src="img/youtube_icon_0.png" onmouseover="this.src='img/youtube_icon.png'" onmouseout="this.src='img/youtube_icon_0.png'"  alt="youtube" height="40px"></a>
+            </div>    
+            <div class="item">
+                <span class="icon"><img src="img/사랑했지만.jpg" height=" 70px"></span>
+                <span class="name">김경호 - 사랑했지만</span>
+                <a class="youtube" href="https://youtu.be/BK8rMenB3bo" target='_blank'><img id="6_song" src="img/youtube_icon_0.png" onmouseover="this.src='img/youtube_icon.png'" onmouseout="this.src='img/youtube_icon_0.png'"  alt="youtube" height="40px"></a>
+            </div>    
+            <div class="item">
+                <span class="icon"><img src="img/이미 슬픈 사랑.jpg" height=" 70px"></span>
+                <span class="name">야다 - 이미 슬픈 사랑</span>
+                <a class="youtube" href="https://youtu.be/rZnw6xKmAmI" target='_blank'><img id="7_song" src="img/youtube_icon_0.png" onmouseover="this.src='img/youtube_icon.png'" onmouseout="this.src='img/youtube_icon_0.png'"  alt="youtube" height="40px"></a>
+            </div>
+            <div class="item">
+                <span class="icon"><img src="img/흰수염고래.jpg" height=" 70px"></span>
+                <span class="name">YB - 흰수염고래</span>
+                <a class="youtube" href="https://youtu.be/gLXRYmKxqvQ" target='_blank'><img id="8_song" src="img/youtube_icon_0.png" onmouseover="this.src='img/youtube_icon.png'" onmouseout="this.src='img/youtube_icon_0.png'"  alt="youtube" height="40px"></a>
+            </div>
+            <div class="item">
+                <span class="icon"><img src="img/bad.jfif" height=" 70px"></span>
+                <span class="name">Christopher(크리스토퍼) - Bad</span>
+                <a class="youtube" href="https://youtu.be/lJZve3zkD6Y" target='_blank'><img id="9_song" src="img/youtube_icon_0.png" onmouseover="this.src='img/youtube_icon.png'" onmouseout="this.src='img/youtube_icon_0.png'"  alt="youtube" height="40px"></a>
+            </div>
+            <div class="item">
+                <span class="icon"><img src="img/believer.jfif" height=" 70px"></span>
+                <span class="name">Imagine Dragons(이매진 드래곤스) - Believer</span>
+                <a class="youtube" href="https://youtu.be/Kx7B-XvmFtE" target='_blank'><img id="10_song" src="img/youtube_icon_0.png" onmouseover="this.src='img/youtube_icon.png'" onmouseout="this.src='img/youtube_icon_0.png'"  alt="youtube" height="40px"></a>
+            </div>
+            <div class="item">
+                <span class="icon"><img src="img/Centuries.jfif" height=" 70px"></span>
+                <span class="name">Fall Out Boy(폴 아웃 보이) - Centuries</span>
+                <a class="youtube" href="https://youtu.be/lTLMImODwmg" target='_blank'><img id="11_song" src="img/youtube_icon_0.png" onmouseover="this.src='img/youtube_icon.png'" onmouseout="this.src='img/youtube_icon_0.png'"  alt="youtube" height="40px"></a>
+            </div>
+            <div class="item">
+                <span class="icon"><img src="img/demons.jfif" height=" 70px"></span>
+                <span class="name">Imagine Dragons(이매진 드래곤스) - Demons</span>
+                <a class="youtube" href="https://youtu.be/y4FiCl-tUJc" target='_blank'><img id="12_song" src="img/youtube_icon_0.png" onmouseover="this.src='img/youtube_icon.png'" onmouseout="this.src='img/youtube_icon_0.png'"  alt="youtube" height="40px"></a>
+            </div>
+            <div class="item">
+                <span class="icon"><img src="img/don't cry.jpg" height=" 70px"></span>
+                <span class="name">더 크로스 - Don't cry</span>
+                <a class="youtube" href="https://youtu.be/QfiJEggNNnk" target='_blank'><img id="13_song" src="img/youtube_icon_0.png" onmouseover="this.src='img/youtube_icon.png'" onmouseout="this.src='img/youtube_icon_0.png'"  alt="youtube" height="40px"></a>
+            </div>
+            <div class="item">
+                <span class="icon"><img src="img/endless.jpg" height=" 70px"></span>
+                <span class="name">플라워 - Endless</span>
+                <a class="youtube" href="https://youtu.be/xEIu-Hl4m-s" target='_blank'><img id="14_song" src="img/youtube_icon_0.png" onmouseover="this.src='img/youtube_icon.png'" onmouseout="this.src='img/youtube_icon_0.png'"  alt="youtube" height="40px"></a>
+            </div>
+            <div class="item">
+                <span class="icon"><img src="img/Eye Of The Storm.jfif" height=" 70px"></span>
+                <span class="name">Watt White(와트 화이트) - Eye Of The Storm</span>
+                <a class="youtube" href="https://youtu.be/VRum1bWjExU" target='_blank'><img id="15_song" src="img/youtube_icon_0.png" onmouseover="this.src='img/youtube_icon.png'" onmouseout="this.src='img/youtube_icon_0.png'"  alt="youtube" height="40px"></a>
+            </div>
+            <div class="item">
+                <span class="icon"><img src="img/immortals.jfif" height=" 70px"></span>
+                <span class="name">Fall Out Boy(폴 아웃 보이) - Immortals</span>
+                <a class="youtube" href="https://youtu.be/PHn5Q7hCjxw" target='_blank'><img id="16_song" src="img/youtube_icon_0.png" onmouseover="this.src='img/youtube_icon.png'" onmouseout="this.src='img/youtube_icon_0.png'"  alt="youtube" height="40px"></a>
+            </div>
+            <div class="item">
+                <span class="icon"><img src="img/legend.jfif" height=" 70px"></span>
+                <span class="name">The Score(더 스코어) - Legend</span>
+                <a class="youtube" href="https://youtu.be/-Oleu6OEJYY" target='_blank'><img id="17_song" src="img/youtube_icon_0.png" onmouseover="this.src='img/youtube_icon.png'" onmouseout="this.src='img/youtube_icon_0.png'"  alt="youtube" height="40px"></a>
+            </div>
+            <div class="item">
+                <span class="icon"><img src="img/natural.jfif" height=" 70px"></span>
+                <span class="name">Imagine Dragons(이매진 드래곤스) - Natural</span>
+                <a class="youtube" href="https://youtu.be/pXu6JC6-d_o" target='_blank'><img id="18_song" src="img/youtube_icon_0.png" onmouseover="this.src='img/youtube_icon.png'" onmouseout="this.src='img/youtube_icon_0.png'"  alt="youtube" height="40px"></a>
+            </div>
+            <div class="item">
+                <span class="icon"><img src="img/radioactive.jfif" height=" 70px"></span>
+                <span class="name">Imagine Dragons(이매진 드래곤스) - Radioactive</span>
+                <a class="youtube" href="https://youtu.be/R_BO8C05XLA" target='_blank'><img id="19_song" src="img/youtube_icon_0.png" onmouseover="this.src='img/youtube_icon.png'" onmouseout="this.src='img/youtube_icon_0.png'"  alt="youtube" height="40px"></a>
+            </div>
+            <div class="item">
+                <span class="icon"><img src="img/The Phoenix.jfif" height=" 70px"></span>
+                <span class="name">Fall Out Boy(폴 아웃 보이) - Phoenix</span>
+                <a class="youtube" href="https://youtu.be/_WgCzPKYDWI" target='_blank'><img id="20_song" src="img/youtube_icon_0.png" onmouseover="this.src='img/youtube_icon.png'" onmouseout="this.src='img/youtube_icon_0.png'"  alt="youtube" height="40px"></a>
+            </div>
+            <div class="item">
+                <span class="icon"><img src="img/thunder.jfif" height=" 70px"></span>
+                <span class="name">Imagine Dragons(이매진 드래곤스) - Thunder</span>
+                <a class="youtube" href="https://youtu.be/9ssQKlLxBdQ" target='_blank'><img id="21_song" src="img/youtube_icon_0.png" onmouseover="this.src='img/youtube_icon.png'" onmouseout="this.src='img/youtube_icon_0.png'"  alt="youtube" height="40px"></a>
+            </div>
+            <div class="item">
+                <span class="icon"><img src="img/Tiny Riot.jpg" height=" 70px"></span>
+                <span class="name">Sam Ryder(샘 라이더) - Tiny Riot</span>
+                <a class="youtube" href="https://youtu.be/UyebyTbqFMY" target='_blank'><img id="22_song" src="img/youtube_icon_0.png" onmouseover="this.src='img/youtube_icon.png'" onmouseout="this.src='img/youtube_icon_0.png'"  alt="youtube" height="40px"></a>
+            </div>
+            <div class="item">
+                <span class="icon"><img src="img/you.jpg" height=" 70px"></span>
+                <span class="name">김상민 - You</span>
+                <a class="youtube" href="https://youtu.be/y6C2u4VFGwM" target='_blank'><img id="23_song" src="img/youtube_icon_0.png" onmouseover="this.src='img/youtube_icon.png'" onmouseout="this.src='img/youtube_icon_0.png'"  alt="youtube" height="40px"></a>
+            </div>
+        </div>                      
+    </section>
+    <footer>
+        <div>
+            <address>이성언 21961076 Digital Media Design</address>
+            <span>더 훌륭한 노래들이 있다면 알려주세요!🔽</span>
+            <address>djsl5495@kaywon.ac.kr</address>
+        </div>
+    </footer>
+</body>
+</html>
