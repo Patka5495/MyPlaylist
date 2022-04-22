@@ -17,9 +17,8 @@ a:link, a:hover, a:visited, a:active{
 nav{
     height: 70px;
     width: 100%;
-    box-shadow: 0px 5px 10px 5px rgb(0, 0, 0);
+    /* box-shadow: 0px 5px 10px 5px rgb(0, 0, 0); */
     background-color: #14001c;
-    z-index: 2;
 }
 #nav_container{
     max-width: 1720px;
